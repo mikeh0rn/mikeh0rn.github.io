@@ -1,0 +1,77 @@
+/* include your css here */
+
+    
+      body {
+      
+    }
+      
+      header {
+        width: 100%;
+        text-align: center;
+        margin: 0% 0% 2% 0%;
+        height: 50px; /* we want to keep static */
+        background-color: #5F4004;
+        border-radius: 4px;
+        color: #FFE6B3;
+        font-size: 30px;
+        
+      }
+      
+      #container {
+        width: 100%;
+        
+        margin: 0 auto; /*  */
+        
+      }
+      
+      nav {
+        width: 25%;
+        float: left;
+        background-color: #033939;
+        border-radius: 4px;
+        text-align: center;
+        padding: 1% 1% 1% 1%;
+        margin: 0% 2% 0% 2%;
+        font-family: 'Open Sans';
+        
+       
+        
+        
+      }
+      
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+      
+      li {
+        margin:0;
+        padding:0;
+      }
+      
+      
+      a {
+        text-decoration: none;
+        color: #72A2A2;
+      }
+      
+      a:hover {
+        color: white;
+      }
+      
+      #content {
+        width: 66%;
+        float: left;
+        background-color: #5F4004;
+        border-radius: 4px;
+        padding: 1% 1% 1% 1%;
+        color: #FFE6B3;
+        
+      }
+      
+      img {
+        width: 100%;
+      }
+      
+      
