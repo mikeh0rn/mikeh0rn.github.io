@@ -1,0 +1,422 @@
+
+ .wrapper {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+body {
+
+  background-color: #DCDCDC;
+}
+
+  
+  header {
+    position: relative;
+    width: 97%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    float: left;
+
+    }
+
+  
+ #social {
+    
+    width: 97%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    float: left;
+   
+    
+  }
+
+  nav div a {
+
+    text-decoration: none;
+    color: #000000;
+  }
+
+
+  .button {
+    width: 23%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    background-color: #00CCFF;
+    height: 2em;
+    border-radius: 5px;
+    font-family: Helvetica;
+    text-align: center;
+    padding-top: 8px;
+
+
+  }
+
+
+
+
+  nav {
+    
+    width: 97%;
+    margin-right: 1%;
+    margin-bottom: 2%;
+    float: left;
+    padding-bottom: 5px;
+    
+
+    
+  }
+
+  img {
+    max-width: 100%;
+
+  }
+
+
+  article ul li {
+
+    padding: 1% 1% 1% 1%;
+
+  }
+
+h1 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 2em;
+  
+  text-align: center;
+  margin-top: 2%;
+}
+
+h3 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+
+h4 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.5em;
+  text-align: center;
+}
+
+
+
+
+
+
+  ul {
+
+    list-style-type: none;
+    font-size: 14px;
+    text-align: left
+  }
+
+  ul a {
+    text-decoration: none;
+
+
+  }
+
+  header p {
+    text-align: left;
+
+  }
+
+
+
+  article h2 {
+    font-family: Helvetica;
+    font-size: 1em;
+    color: #000;
+
+  }
+    
+
+
+
+    #projects, #blog, #aboutme, #resume h2 {
+    
+    font-size: 50px;
+    
+
+
+  }
+
+
+
+
+
+  article a {
+
+    text-decoration: none;
+  }
+
+
+header p {
+  margin: 1% 1% 1% 1%;
+  text-align: center;
+  font-size: 20px;
+  
+
+  }
+
+
+
+   #blog {
+    height: 500px;
+  border-radius: 60px;
+  
+  font-family: Helvetica;
+  text-align: center;
+  width: 47%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    background-color: #f8361b;
+
+  }
+
+  #aboutme {
+    height: 500px;
+  border-radius: 60px;
+  
+  font-family: Helvetica;
+  text-align: center;
+  width: 47%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    background-color: #fff835;
+
+  }
+
+  #resume {
+    height: 500px;
+  border-radius: 60px;
+  
+  font-family: Helvetica;
+  text-align: center;
+  width: 47%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    background-color: #028fe9;
+
+  }
+
+
+#projects {
+
+  
+  height: 10em;
+  border-radius: 60px;
+  
+  font-family: Helvetica;
+  text-align: center;
+  width: 47%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    background-color: #3dd34e;
+}
+
+#content {
+  
+  height: 500px;
+  border-radius: 60px;
+  
+  font-family: Helvetica;
+  text-align: center;
+  width: 45%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    
+    background-color: #F4F4F4;
+    border: 1px solid;
+    padding: 2px 2px 2px 2px;
+}
+
+
+
+h2 {
+  padding: 100px 0;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+
+header {
+  
+  height: 50px;
+  border-radius: 4px;
+  color: #000;
+  font-family: Helvetica;
+  text-align: center;
+  padding-left: 40px;
+ 
+}
+
+#social {
+  
+  height: 100px;
+  border-radius: 4px;
+  color: #000;
+  font-family: Helvetica;
+ padding-left: 5%;
+  width: 75%;
+ 
+}
+
+
+.button {
+    width: 100%;
+    margin: 1% 1% 1% 1%;
+
+    float: left;
+    background-color: #00CCFF;
+    height: 1.5em;
+    border-radius: 5px;
+    font-family: Helvetica;
+    text-align: center;
+    
+    
+
+
+
+  }
+
+
+
+nav {
+  
+  height: 100px;
+  border-radius: 4px;
+  color: #000;
+  font-family: Helvetica;
+  padding-left: 25px;
+  width: 75%;
+ 
+}
+
+header p {
+  margin: 6% 1% 1% 1%;
+  text-align: center;
+  font-size: 18px;
+}
+
+ article ul li {
+
+    padding: 5% 5% 5% 5%;
+    text-align: center;
+    margin-left: 10%;
+
+  }
+
+h1 {
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 2em;
+  
+  text-align: left;
+  margin-top: 2%;
+
+}
+
+
+#projects {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 15%;
+
+    float: left;
+    height: 7em;
+    background-color: #3dd34e;
+
+  }
+
+  #blog {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 15%;
+
+    float: left;
+    height: 7em;
+    background-color: #f8361b;
+
+  }
+
+
+  #aboutme {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 15%;
+
+    float: left;
+    height: 7em;
+    background-color: #fff835;
+
+  }
+
+
+  
+
+  #resume {
+    width: 100%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    margin-top: 15%;
+
+    float: left;
+    height: 22em;
+    background-color: #028fe9;
+
+  }
+
+
+
+
+
+
+
+  #content {
+    width: 86%;
+    margin-right: 2%;
+    margin-bottom: 1%;
+    float: left;
+    background-color: #F4F4F4;
+    border: 1px solid;
+    height: 20em;
+    padding: 4% 4% 4% 4%;
+
+  }
+
+
+
+    ul {
+
+    list-style-type: none;
+    font-size: 0.7em;
+    text-align: center;
+    margin-right: 30%;
+    margin-bottom: 30%;
+  }
+
+  ul a {
+    text-decoration: none;
+
+  }
+
+
+}
+
