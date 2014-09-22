@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+		<title>Mike Horn's GitHub Blog</title>
+	</head>
+	<body>
+		<div id="header" align="center">Mike Horn's GitHub Blog</div>
+		<div id="img"><img src="https://avatars0.githubusercontent.com/u/8358047?v=2&s=460" width="80px" height="80px" /></div>
+		<div class="left"><h4>Welcome to my blog!</h4>
+			<h5><ul>
+<li><a href="#">About Me</a></li>
+<li><a href="#">Archive</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Contact</a></li>
+</ul></div>
+		<div class="right">
+			<p>
+				<h2 align="center" style="line-height: 25px">Week 4 Technical Blog: <em>Enumerable#map</em></h2>
+				<h3 align="center">September 21, 2014</h3>
+				<h5 align="center"><p>One of the key methods we dove into this week was the Enumerable#map (.map) method. I had done some research on this method because I was particular intrigued by how this method differentiated itself from a method like ".each" since they seemed to be applied in the same fashion. However, the key takeaway from this week is that map is used to, in short, to return a new array after items have been iterated over in a block of code vs. .each which will just return the original array. From a non-technical standpoint, it will look at the items in a group of numbers or items (the array) and say "For each one of these items, do this to it. And when you're done doing what I told to do to this, give me a brand new version of the original thing but with the items in the same order."</p>
+
+<p>If this were attempted using .each, it would ultimately spit back out the same array you gave it. Each is used to process an array but does not have the power to create a new array with manipulated items.</p> 
+
+<p>An example using each...
+<strong>[1,2,3].each { |i| i * 2 } #=> [1,2,3]</strong></p>
+
+<p><em>Note: you're getting the SAME array back. Hmm I guess we should try map to give us that new array we were looking for to apply that block of code over each item in the array...</em></p>
+
+<p><strong>[1,2,3].map { |i| i * 2 } #=> [2,4,6] </strong></p></h5>
+
+			</div>
+		<div id="footer">&#169; 2014</div>
+
+	
+
+	</body>
+</html>
