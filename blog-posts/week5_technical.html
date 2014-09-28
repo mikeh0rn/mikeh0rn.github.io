@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="../stylesheets/blog-stylesheet.css"/>
+		<title>Mike Horn's GitHub Blog</title>
+	</head>
+	<body>
+		<div id="header" align="center">Mike Horn's GitHub Blog</div>
+		<div id="img"><img src="https://avatars0.githubusercontent.com/u/8358047?v=2&s=460" width="80px" height="80px" /></div>
+		<div class="left"><h4>Welcome to my blog!</h4>
+			<h5><ul>
+<li><a href="#">About Me</a></li>
+<li><a href="#">Archive</a></li>
+<li><a href="#">Facebook</a></li>
+<li><a href="#">Twitter</a></li>
+<li><a href="#">Contact</a></li>
+</ul></div>
+		<div class="right">
+			<p>
+				<h2 align="center" style="line-height: 25px">Week 5 Technical Blog: <em>Ruby Classes</em></h2>
+				<h3 align="center">September 28, 2014</h3>
+				<h5 align="center"><p>This week's blog post is about Ruby Classes. What are they? Why would we use them and HOW do we use them.</p>
+								   <p>Simply put, like most things in Ruby, Classes are objects. They are models to organize data to create new objects.
+								   This may sound long-winded and confusing but as you'll in the example below, Classes are really great structures for more in-depth programming in Ruby. It's a great way of keeping items organized and making sure certain methods we create can only be used within that Class. Similar to what I did for my JavaScript solo challenge, I'll stick to the music theme. Here's an example where we initialize a parameter that takes a band name and a band album and once they are entered, it'll return an interpolated string when we create a new instance of that Class. If you're confused well so am I so don't worry. I tried to make a very basic class to spell out the approach. Sorry for the lack of indentation. This is will be fixed throughout the next few weeks as I continue to update my blog layout...</p>
+
+								   <p><em>class Music<br>
+def initialize (bandname, favalbum)<br>
+@bandname = bandname<br>
+@favalbum = favalbum<br>
+end<br><br>
+
+def bands<br>
+return "I really love the band #{@bandname}! Especially, the album #{@favalbum}."<br>
+end<br>
+end<br>
+</em></p>
+
+
+<p>With every class, you need to include an initialize method for the parameters it's going to take. This is ultimately the guts of the Class that will allow you to add instance variables that could be defined and used later within the class at any point in the Class. The beautiful thing about instance variables (items with an '@' symbol) is that they are available to you throughout the class in any way, shape or form. Through the initialize method, you state your instance variables and using the sugar syntax that ruby makes so beautiful, you can do things like @bandname = bandname and when you pass the argument through the initialize parameters, the string interpolation within the bands method will allow that instance variable to be referenced. When Led Zeppelin is entered, they'll be entered through the instance variable @bandname within the string.</p>
+
+<p><em>Here are a couple of driver tests I made that should create new instances of the Class and run it with the band name and album entered:
+<br><br>
+Example 1:<br>
+band_entry = Band.new("Led Zeppelin", "House of the Holy")<br>
+band_entry.bands<br><br>
+
+Example 2:<br>
+band_entry = Band.new("Phish", "Junta")<br>
+band_entry.bands</em></p>
+</h5>
+
+			</div>
+		<div id="footer">&#169; 2014</div>
+
+	
+
+	</body>
+</html>
