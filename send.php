@@ -1,20 +1,26 @@
 <?php
+/* Set e-mail recipient */
+$myemail = "mhorn918@gmail.com";
 
-$q1=$_POST['q1'];
-$q2=$_POST['q2'];
-$q3=$_POST['q3'];
-$q4=$_POST['q4'];
+/* Check all form inputs using check_input function */
+$name = $_POST['name'];
+$subject = "the subject line";
+$email = $_POST['email'];
+$phone = $_POST['phone'];
 
-$to_email = 'mhorn918@gmail.com';
-$subject = '$q1 $q2 $q3 $4';
-$message = 'This mail is sent using the PHP mail function';
-// $headers = 'From: you@you.com';
+/* Let's prepare the message for the e-mail */
+$message = "
 
-$headers = array("From: mikelaurencehorn@gmail.com",
-    "Reply-To: mikelaurencehorn@gmail.com",
-    "X-Mailer: PHP/" . PHP_VERSION
-);
-$headers = implode("\r\n", $headers);
+Name: $name
+E-mail: $email
+Subject: $subject
 
-mail($to_email,$subject,$message,$headers);
+Phone:
+$phone
+
+";
+
+/* Send the message using mail() function */
+mail($myemail, $subject, $message);
+
 ?>
