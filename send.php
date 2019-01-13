@@ -21,6 +21,6 @@ $phone
 ";
 
 /* Send the message using mail() function */
-mail($myemail, $subject, $message);
+$mail($myemail, $subject, $message, "From: $name <$email>");
 
 ?>
