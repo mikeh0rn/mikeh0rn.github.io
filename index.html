@@ -24,6 +24,18 @@ branch.setBranchViewData({
     '$deeplink_path': 'open/item/1234'
   }
 });
+    
+  var branch_content_items = {
+    "$custom_fields" : {
+      "page_type" : "page type",
+      "product_type" : "product type",
+      "current_vehicle" : "current vehicle",
+      "is_buyer" : "true"
+    }
+
+  }
+
+  branch.logEvent("pageview", branch_content_items);
 
 </script>
 
