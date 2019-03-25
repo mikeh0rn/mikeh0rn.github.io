@@ -25,17 +25,26 @@ branch.setBranchViewData({
   }
 });
     
-  var branch_content_items = {
-    "$custom_fields" : {
-      "page_type" : "page type",
-      "product_type" : "product type",
-      "current_vehicle" : "current vehicle",
-      "is_buyer" : "true"
-    }
+var content_items = [
+    {
+        "$og_title": "Nike Shoe",
+        "$og_description": "Just Do It",
+        "$og_image_url": "http://example.com/img1.jpg",
+        "$canonical_identifier": "nike/1234",
+     }
+];
 
-  }
+var event_and_custom_data = {
+            "order_confirmation": "ABCDXYZ"
+        };
 
-  branch.logEvent("pageview", branch_content_items);
+
+branch.logEvent(
+            "pageview",
+            event_and_custom_data,
+            content_items,
+            function(err) { console.log(err); }
+        ); 
 
 </script>
 
