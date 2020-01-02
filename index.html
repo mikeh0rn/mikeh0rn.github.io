@@ -78,8 +78,12 @@ branch.data(function(err, data) {
   console.log("data from the data func");
   console.log(err, data);
 });
-    
-var listener = function(event, data) { console.log(event, data); }
+
+var listenerData = {};
+var listener = function(event, data) { 
+  console.log(event, data);
+  listenerData = data;
+}
 
 // Specify an event to listen for
 branch.addListener('willShowJourney', listener);
