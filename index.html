@@ -79,6 +79,11 @@ branch.data(function(err, data) {
   console.log(err, data);
 });
     
+var listener = function(event, data) { console.log(event, data); }
+
+// Specify an event to listen for
+branch.addListener('willShowJourney', listener);
+    
 var event_and_custom_data = {
    "description": "Preferred purchase",
    "purchase_loc": "Palo Alto",
