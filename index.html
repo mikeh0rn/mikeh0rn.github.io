@@ -40,53 +40,26 @@
   </style>
   <script type="text/javascript">
  (function(b,r,a,n,c,h,_,s,d,k){if(!b[n]||!b[n]._q){for(;s<_.length;)c(h,_[s++]);d=r.createElement(a);d.async=1;d.src="https://cdn.branch.io/branch-latest.min.js";k=r.getElementsByTagName(a)[0];k.parentNode.insertBefore(d,k);b[n]=h}})(window,document,"script","branch",function(b,r){b[r]=function(){b._q.push([r,arguments])}},{_q:[],_v:1},"addListener applyCode autoAppIndex banner closeBanner closeJourney creditHistory credits data deepview deepviewCta first getCode init link logout redeem referrals removeListener sendSMS setBranchViewData setIdentity track validateCode trackCommerceEvent logEvent disableTracking".split(" "), 0);
-  
-branch.init('key_live_nlHjUfa45WJ2Y6tnUKC2rfjeztaK0nA0', function(err, data) {
-  console.log("data from the init");
-  console.log(err, data);
-});
     
-branch.data(function(err, data) {
-  console.log("data from the data func");
-  console.log(err, data);
-});
+branch.init('key_live_nlHjUfa45WJ2Y6tnUKC2rfjeztaK0nA0', function() {
+            branch.addListener('didShowJourney', function () {
+                console.log("didShowJourney Listener");
+            });
+            branch.addListener('didClickJourneyClose', function () {
+                console.log("didClickJourneyClose Listener");
+            });
+            branch.addListener('didClickJourneyCTA', function () {
+                console.log("didClickJourneyCTA Listener");
+            });
+        });
 
-var listenerData = {};
-var listener = function(event, data) { 
-  console.log(event, data);
-  listenerData = data;
-}
-
-// Specify an event to listen for
-branch.addListener('willShowJourney', listener);
-    
-var event_and_custom_data = {
-   "description": "Preferred purchase",
-   "purchase_loc": "Palo Alto",
-   "store_pickup": "unavailable"
-};
-
-var content_items = [
-{
-   "$og_title": "Nike Shoe",
-   "$og_description": "Start loving your steps",
-   "$og_image_url": "http://example.com/img1.jpg",
-   "$canonical_identifier": "nike/1234"
-}];
-
-branch.logEvent(
-   "pageview",
-   event_and_custom_data,
-   content_items,
-   function(err) { console.log(err); }
-);
 
 </script>
 
 </head>
 <body>
 
-<p class="p1"><span class="s1">Branch Journey Test</span></p>
+  <p class="p1"><span class="s1"><h1>Wouldn't it be awesome if whatever we're testing just worked?</h1></span></p>
 
 </body>
 </html>
