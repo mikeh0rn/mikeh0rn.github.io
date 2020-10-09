@@ -69,17 +69,8 @@ var listener = function(event, data) {
 branch.addListener('didClickJourneyClose', function () {
     console.log("didClickJourneyClose Listener");
     // setIdentity with a Unique Identifier IF the user closes Journey
-    branch.setIdentity(
-      "12345",
-      callback (err, data)
-      
-      branch.logEvent(
-        "User Closed Journey - Continues on Web",
-        callback (err)
-      );
-    );
-  
-    
+    branch.setIdentity("12345");
+    branch.logEvent("User Closed Journey - Continues on Web");
 });
 
 branch.getBrowserFingerprintId(function(err, data) { 
