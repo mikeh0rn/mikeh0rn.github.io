@@ -72,11 +72,6 @@ branch.addListener('didClickJourneyClose', function () {
     branch.setIdentity("12345");
     branch.logEvent("User Closed Journey - Continues on Web");
 });
-
-branch.getBrowserFingerprintId(function(err, data) { 
-  console.log("browser-fingerprint-id:");
-  console.log(data); 
-});
   
 branch.crossPlatformIds(function (err, data) {
       console.log("CPIDs:");
