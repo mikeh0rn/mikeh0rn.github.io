@@ -149,6 +149,8 @@ branch.addListener('didClickJourneyClose', function () {
     branch.setIdentity("12345");
     // Log Custom Event for a User that Closed a Journey and Continues on mWeb
     branch.logEvent("User Closed Journey - Continues on mWeb");
+    // Call logout() to clear the session in the event the User closes the Journey and does not Purchase right away.
+    // You want to be safe and avoid the same ID persisting 
     branch.logout();
 });
   
