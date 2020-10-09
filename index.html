@@ -68,8 +68,30 @@ var listener = function(event, data) {
 
 branch.addListener('didClickJourneyClose', function () {
     console.log("didClickJourneyClose Listener");
+    // setIdentity with a Unique Identifier IF the user closes Journey
+    branch.setIdentity(
+      "12345",
+      callback (err, data)
+      
+      branch.logEvent(
+        "User Closed Journey - Continues on Web",
+        callback (err)
+      );
+    );
+  
+    
 });
 
+branch.getBrowserFingerprintId(function(err, data) { 
+  console.log("browser-fingerprint-id:");
+  console.log(data); 
+});
+  
+branch.crossPlatformIds(function (err, data) {
+      console.log("CPIDs:");
+      console.log(err);
+      console.log(data);
+});
   
 // branch.init('key_live_omPdKap615NW52zlTUvXEklayEiTWfyW', function() {
             
