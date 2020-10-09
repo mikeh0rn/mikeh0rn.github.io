@@ -66,10 +66,8 @@ var listener = function(event, data) {
     listenerData = data
 }
 
-branch.addListener('didShowJourney', listener);
-branch.addListener('willShowJourney', listener);
-branch.addListener('willNotShowJourney', function () {
-    console.log("willNotShowJourney Listener");
+branch.addListener('didClickJourneyClose', function () {
+    console.log("didClickJourneyClose Listener");
 });
 
   
