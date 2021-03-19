@@ -132,8 +132,37 @@ function purchaseEvent() {
 //     }
 // });
   
-branch.init("key_live_omPdKap615NW52zlTUvXEklayEiTWfyW", function(err, data) {
+branch.init("key_live_nnGgQglWZYGYWZxjSSqXuiofuBgM1cy8", function(err, data) {
       console.log(data)
+});
+  
+var qrCodeSettings = {
+    "code_color":"#000000",
+    "background_color": "#FFFFFF",
+    "margin": 5,
+    "width": 1000,
+    "image_format": "png"
+};
+var qrCodeLinkData = {
+    tags: [ 'tag1', 'tag2' ],
+    channel: 'sample app',
+    feature: 'create link',
+    stage: 'created link',
+    data: {
+        mydata: 'bar',
+        '$desktop_url': 'https://cdn.branch.io/example.html',
+        '$og_title': 'Branch Metrics',
+        '$og_description': 'Branch Metrics',
+        '$og_image_url': 'http://branch.io/img/logo_icon_white.png'
+    }
+};
+branch.qrCode(qrCodeParams, qrCodeLinkData, function(err, qrCode) {
+  
+    // qrCode.rawBuffer is the raw buffer
+    // qrCode.base64() is the encoded 
+    //
+    // Example img tag:
+    <img src="data:image/png;charset=utf-8;base64,' + qrCode.base64() + '" width="500" height="500">
 });
 
   
