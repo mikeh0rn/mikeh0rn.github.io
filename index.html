@@ -162,7 +162,10 @@ branch.qrCode(qrCodeParams, qrCodeLinkData, function(err, qrCode) {
     // qrCode.base64() is the encoded 
     //
     // Example img tag:
-    <img src="data:image/png;charset=utf-8;base64,' + qrCode.base64() + '" width="500" height="500">
+    var qrCode = qrCode.base64()
+    document.getElementById('qr').src = 'data:image/png;charset=utf-8;base64,' + qrCode';
+//     document.getElementById('qr').innerHTML = '<img src="data:image/png;charset=utf-8;base64,' + qrCode.base64() + '.png" id="qr" width="500" height="500"/>';
+
 });
 
   
@@ -206,6 +209,7 @@ branch.addListener('didClickJourneyClose', function () {
 
   <p class="p1"><span class="s1"><h1>HORN'S AWESOME TEST PAGE</h1></span></p>
   <p class="p1"><span class="s1"><h2>plz don't break.</h2></span></p>
+  <img id="qr" width="500" height="500" />
 
   <button onclick="purchaseEvent()">PURCHASE EVENT</button>
 
