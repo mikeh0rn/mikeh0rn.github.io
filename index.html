@@ -173,10 +173,10 @@ var listenerData = {};
 var listener = function(event, data) {
     console.log(event, data);
     listenerData = data
-//     console.log(listenerData["journey_link_data"]);
+    console.log(listenerData["journey_link_data"]);
 }
 
-branch.addListener('didShowJourney', function () {
+branch.addListener('willShowJourney', function () {
     console.log(listenerData["journey_link_data"]);
 });
   
